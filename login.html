@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--RWD-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--CSS-->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="mycss.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="myjs.js"></script>
+
+	<title>登入</title>
+</head>
+<body>
+
+	<div  style="background-color: #444444">
+		<nav>
+		</nav>
+	
+		<main class="pb-4">
+			<div class="login-position">
+				<div class="login-pic-div">
+				<img src="images/LOGIN-10-512.png" class="login-pic">
+				</div>
+				<div class="login-position-1">
+					<div class="login-div">
+						<img src="images/login.png" class="login-pic-1">
+						<input type="text" id="username" name="username" placeholder="輸入帳號" class="login-input" required>
+					</div>
+					<div class="login-div">
+						<img src="images/password.png" class="login-pic-1">
+						<input type="password" id="password" name="password" placeholder="輸入密碼" class="login-input" required>
+					</div>
+					<div class="login-btn-div">
+						<button class="btn btn-primary btn-block" id="btnSearch" onclick="login()">登入</button>
+					</div>
+				</div>
+
+			</div>
+			
+		</main>
+	</div>
+</body>
+</html>
