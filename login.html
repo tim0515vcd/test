@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
 	<!--RWD-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!--CSS-->
@@ -8,37 +9,33 @@
 	<link rel="stylesheet" type="text/css" href="css/mycss.css">
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/myjs.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
 
 	<title>登入</title>
 </head>
 <body>
+	<div class="system_name">
+      <h2>OO系統</h2>
+    </div>
 
-	<div  style="background-color: #444444">
-		<nav>
-		</nav>
-	
-		<main class="pb-4">
-			<div class="login-position">
-				<div class="login-pic-div">
-				<img src="images/LOGIN-10-512.png" class="login-pic">
-				</div>
-				<div class="login-position-1">
-					<div class="login-div">
-						<img src="images/login.png" class="login-pic-1">
-						<input type="text" id="username" name="username" placeholder="輸入帳號" class="login-input" required>
-					</div>
-					<div class="login-div">
-						<img src="images/password.png" class="login-pic-1">
-						<input type="password" id="password" name="password" placeholder="輸入密碼" class="login-input" required>
-					</div>
-					<div class="login-btn-div">
-						<button class="btn btn-primary btn-block" id="btnSearch" onclick="login()">登入</button>
-					</div>
-				</div>
-
+	<div id='container'>
+		<form class="form-signin" id="loginForm" action="" method="post">		
+			<input type="text" id="username" name="username" placeholder="輸入帳號" class="form-control input" required autofocus>
+			<input type="password" id="password" name="password" placeholder="輸入密碼" class="form-control input" required>
+			<div class="checkbox mb-3">
+			    <label class="label">
+			      <input type="checkbox" id="remember-me" name="remember-me" value="true"> 記住我
+			    </label>
+		  	</div>
+			<div class="login-btn-div">
+			<input class="btn btn-primary btn-block" id="btnSearch" type="submit" name="login" value="登入">
 			</div>
-			
-		</main>
+		</form>
+		<h6>沒有帳號嗎?<a href="singup.html">註冊</a></h6>
 	</div>
+
+	<div id="copyright">
+      <h6>Copyright © 2021 EulerHsing All rights reserved</h6><!--因為js，會跑版--> 
+    </div>
 </body>
 </html>
