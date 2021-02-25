@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<!--RWD-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--CSS-->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/mycss_v2.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/myjs.js"></script>
+
+	<title>註冊</title>
+</head>
+<body>
+	<div class="system_name">
+      <h2>註冊</h2>
+    </div>
+
+	<div id='container'>
+		<form class="form-signin" action="" method="post">	
+			<input type="text" id="fullname" name="fullname" placeholder="使用者全名" class="form-control input" required autofocus>	
+			<input type="text" id="username" name="username" placeholder="帳號" class="form-control input" required>
+			<input type="password" id="password" name="password" placeholder="密碼" class="form-control input" required>
+			<input type="password" id="comfirm_password" name="comfirm_password" placeholder="確認密碼" class="form-control input" required>
+			<div class="login-btn-div">
+			<button class="btn btn-primary btn-block" id="btnSearch" onclick="">註冊</button>
+			</div>
+		</form>
+	</div>
+
+	<div id="copyright">
+      <h6>Copyright © 2021 EulerHsing All rights reserved</h6><!--因為js，會跑版--> 
+    </div>
+</body>
+</html>
